@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.navDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.menuBar {
+  display: none;
+}
+.empty {
+  width: 30%;
+}
+.correct {
+  width: 20%;
+}
+.loader {
+  margin-top: 10%;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 0.5s linear infinite;
+}
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.navLink {
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.navAlign {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.search {
+  display: flex;
+}
+.Avi {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.7rem;
+}
+.productDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  margin: 1rem;
+  /* box-shadow: 0rem 0.1rem 0.9rem rgb(224, 224, 224);
+  border-radius: 2rem; */
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
+}
+
+.featuredDiv {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 250px;
+  border-radius: 2rem;
+}
+.shopDiv {
+  width: 100%;
+  margin: auto;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+}
+.line {
+  background-color: #49a6e9;
+  width: 6rem;
+  height: 0.25rem;
+  margin: auto;
+}
+.titleDiv {
+  margin-bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.titleDiv h1 {
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.productList {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: auto;
+}
+.tableDiv {
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
+.tableSect table {
+  width: 100%;
+}
+.cartImg {
+  max-width: 100px;
+  max-height: 100px;
+  border-radius: 1rem;
+}
+th {
+  text-align: center;
+}
+.checkout {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+.formArea {
+  width: 100%;
+}
+.formDiv {
+  margin: 1rem 1rem 0rem 2rem;
+}
+.cartSum {
+  width: 30%;
+  margin-right: 2rem;
+  display: flex;
+  padding: 1rem;
+  justify-content: center;
+  border-radius: 1rem;
+  flex-direction: column;
+  box-shadow: 0rem 0.3rem 0.9rem rgb(224, 224, 224);
+}
+.detailsDiv {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0rem;
+}
+.prodetDiv {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 3rem;
+}
+.prodetImgDiv {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.productImg {
+  width: 100%;
+  height: 400px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 3rem;
+}
+.proImgs {
+  width: 100%;
+  display: flex;
+  height: 130px;
+  gap: 1rem;
+  justify-content: space-between;
+}
+.proImg {
+  border-radius: 2rem;
+  width: 30%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.proContentDiv {
+  width: 60%;
+}
+.proContentDiv h1 {
+  font-size: 2rem;
+}
+.reviewDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  width: 450px;
+  margin: 0.7rem 0.7rem;
+  border-radius: 1rem;
+  box-shadow: 0rem 0.3rem 0.9rem rgb(224, 224, 224);
+}
+.revContDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.revDrop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.revImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 0.7rem;
+}
+.revName {
+  margin-left: 1rem;
+}
+.revCont {
+  margin-top: 1rem;
+}
+.revCont p {
+  font-size: 14px;
+}
+.allrevDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+}
+.allrev {
+  width: 100%;
+  margin: auto;
+}
+.revSect {
+  margin: 5rem 0rem;
+  display: flex;
+  flex-direction: column;
+}
+.adminDiv {
+  display: flex;
+  margin: 1rem 2rem;
+  flex-direction: row;
+}
+.procontentDiv {
+  width: 67%;
+}
